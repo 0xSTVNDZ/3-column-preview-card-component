@@ -80,3 +80,51 @@ button {
 .attribution a {
     color: hsl(318, 70%, 53%); 
 }
+
+@media (min-width: 1080px){
+    .main-container {
+        display: flex;
+        width: 70%;
+        border-radius: 10px;
+        margin: 13em auto 0em auto;
+    }
+
+    .car {
+        padding: 3em;
+        display: flex;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .car img{
+        width: 100%;
+    }
+
+    .car .text {
+        width: 100%;
+    }
+
+    .text h1 {
+        padding: 0.4em 0em;
+    }
+    
+    .learnMore {
+        margin-top: 4em;
+        width: 9.5em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+
+    .sedans {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .luxury {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
