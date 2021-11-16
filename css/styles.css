@@ -30,6 +30,7 @@ body {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
     font-size: 2.3em;
+    text-transform: uppercase;
 }
 
 p {
@@ -43,10 +44,21 @@ button {
     border: none;
 }
 
+button a{
+    text-decoration: none;
+}
 
 .sedans button {
     border-radius: 30px;
     color: hsl(31, 77%, 52%);
+}
+
+.sedans button a{
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans button a:hover{
+    color: white;
 }
 
 .sedans button:hover{
@@ -62,6 +74,14 @@ button {
 .suvs button {
     border-radius: 30px;
     color: hsl(184, 100%, 22%);
+}
+
+.suvs button a{
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs button a:hover{
+    color: white;
 }
 
 .suvs button:hover{
@@ -81,6 +101,14 @@ button {
     color: hsl(179, 100%, 13%);
 }
 
+.luxury button a{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button a:hover{
+    color: white;
+}
+
 .luxury button:hover{
     color: white;
     border: 2px solid white;
@@ -97,19 +125,30 @@ button {
 }
 
 @media (min-width: 1080px){
+    /*adding body attributes*/
+    body{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
     .main-container {
         display: flex;
         width: 70%;
         border-radius: 10px;
-        margin: 13em auto 0em auto;
+        /*margin: 13em auto 0em auto;*/
+        flex-wrap: nowrap;
     }
 
     .car {
         padding: 3em;
         display: flex;
-        width: 30%;
+        /*width: 30%;*/
+        flex-basis: 100%;
         display: flex;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
     }
 
     .car img{
@@ -141,5 +180,9 @@ button {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 0px;
+    }
+
+    footer{
+        width: 40%;
     }
 }

@@ -14,53 +14,58 @@
 </head>
 
 <body class="container-fluid">
-  <div class="main-container">
+  <div id="main" class="main-container">
 
     <div class="sedans car">
       <div class="img">
-        <img src="./images/icon-sedans.svg" alt="Sedan Icon">
+        <!--decorative images should have alt="" and aria-hidden="true"-->
+        <img src="./images/icon-sedans.svg" alt="" aria-hidden="true">
       </div>
 
       <div class="text">
-        <h1>SEDANS</h1>
+        <h1>Sedans</h1>
         <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
           or on your next road trip.</p>
-        <button class="learnMore">Learn More</button>
+        <button class="learnMore"><a href="">Learn More</a></button>
       </div>
     </div>
 
     <div class="suvs car">
       <div class="img">
-        <img src="./images/icon-suvs.svg" alt="SUVS Icon">
+        <img src="./images/icon-suvs.svg" alt="" aria-hidden="true">
       </div>
 
       <div class="text">
         <h1>SUVs</h1>
         <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
           and off-road adventures.</p>
-        <button class="learnMore">Learn More</button>
+        <button class="learnMore"><a href="">Learn More</a></button>
       </div>
     </div>
 
     <div class="luxury car">
       <div class="img">
-        <img src="./images/icon-luxury.svg" alt="Luxury Icon">
+        <img src="./images/icon-luxury.svg" alt="" aria-hidden="true">
       </div>
 
       <div class="text">
-        <h1>LUXURY</h1>
+        <h1>Luxury</h1>
         <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
           rental and arrive in style.</p>
-        <button class="learnMore">Learn More</button>
+        <button class="learnMore"><a href="">Learn More</a></button>
       </div>
 
     </div>
 
+  </div>  
+
+  <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://twitter.com/0xSTVNDZ">0xSTVNDZ</a>.
     </div>
-  </div>
-  
+  </footer>
 </body>
+
+
 </html>
